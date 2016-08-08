@@ -7,7 +7,6 @@ var corpus = {
 };
 corpus.indigo[84] = [true];
 
-
 // request('https://www.chapters.indigo.ca/en-ca/books/audiobooks/', function (err,res,body) {
 //   if (!err) {
 //     var count = 0;
@@ -38,7 +37,7 @@ corpus.indigo[84] = [true];
 //   };
 // });
 
- 
+//OVERDRIVE GENERATES A SEARCH PATH AND THEN DELETES IT AFTER USE 
 // request("http://toronto.lib.overdrive.com/5E1EC2C3-C4D6-4B16-9335-DE475C726563/10/50/en/SearchResults.htm?SearchID=53831579s&SortBy=CollDate", function (err, res, body) {
 //   if (!err) {
 //     cheerio.load(body)('html').each(function (i, j) {
@@ -50,7 +49,7 @@ corpus.indigo[84] = [true];
 //   }
 // });
 
-
+//RARES: there must be something wrong
 request('http://www.audible.com/newreleases/ref=a_mn_mt_ano_c26_carouselHeader?ie=UTF8&pf_rd_r=0AZSVE7W9NQS3DXSA8Y5&pf_rd_m=A2ZO8JX97D5MN9&pf_rd_t=101&pf_rd_i=anon-hp-redirect-mt&pf_rd_p=2564306222&pf_rd_s=center-26', function (err, res, body) {
   if (!err) {
     cheerio.load(body)('li.adbl-result-item').each(function (i, j) {
